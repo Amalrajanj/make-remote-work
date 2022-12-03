@@ -1,0 +1,103 @@
+.navbar {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items-container,
+.nav-item-list-wrap,
+.action-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.items-container {
+  position: relative;
+}
+.items-container .logo {
+  margin-right: 3rem;
+}
+.items-container .nav-item-list-wrap .nav-items {
+  margin: 0 1rem;
+}
+.items-container .nav-item-list-wrap .nav-items label,
+.items-container .nav-item-list-wrap .nav-items a {
+  color: hsl(0deg, 0%, 41%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.items-container .nav-item-list-wrap .nav-items label:hover,
+.items-container .nav-item-list-wrap .nav-items a:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.items-container .nav-item-list-wrap .nav-items label img {
+  margin-left: 0.3rem;
+}
+
+.nav-sub-items {
+  position: absolute;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+}
+.nav-sub-items li a {
+  margin: 0.5rem auto;
+}
+.nav-sub-items li a img {
+  margin-right: 0.5rem;
+}
+
+.nav-items:hover .nav-sub-items {
+  opacity: 1;
+}
+
+.action-buttons-container button {
+  border: none;
+  outline: none;
+  background: none;
+  margin: 0 1rem;
+  cursor: pointer;
+  color: hsl(0deg, 0%, 41%);
+  font-size: 16px;
+  font-family: "Epilogue", sans-serif;
+  padding: 0.6rem 0.7rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.action-buttons-container button:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.action-buttons-container .register-button {
+  border: 2px solid hsl(0deg, 0%, 41%);
+}
+.action-buttons-container .register-button:hover {
+  border: 2px solid hsl(0deg, 0%, 8%);
+}
+.action-buttons-container .menu-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .nav-item-list-wrap,
+.register-button,
+.login-button {
+    display: none;
+  }
+  .menu-button {
+    display: flex !important;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,86 @@
+.sidebar-main {
+  width: 70%;
+  max-width: 350px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  opacity: 1000;
+  background-color: white;
+}
+.sidebar-main .sidebar-close {
+  border: none;
+  outline: none;
+  background: none;
+  margin: 0 1rem;
+  cursor: pointer;
+  padding: 0.6rem 0.7rem;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.sidebar-main .sidebar-items-container {
+  margin: 5rem 2rem;
+}
+.sidebar-main .sidebar-items-container .sidebar-nav-item-list-wrap a,
+.sidebar-main .sidebar-items-container .sidebar-nav-item-list-wrap label,
+.sidebar-main .sidebar-items-container .sidebar-nav-items a,
+.sidebar-main .sidebar-items-container .sidebar-nav-items label {
+  color: hsl(0deg, 0%, 41%);
+  font-family: "Epilogue", sans-serif;
+}
+.sidebar-main .sidebar-items-container .sidebar-nav-item-list-wrap a:hover,
+.sidebar-main .sidebar-items-container .sidebar-nav-item-list-wrap label:hover,
+.sidebar-main .sidebar-items-container .sidebar-nav-items a:hover,
+.sidebar-main .sidebar-items-container .sidebar-nav-items label:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.sidebar-main .sidebar-items-container .sidebar-nav-sub-items {
+  display: none;
+  margin: 1rem 0 0.5rem 1rem;
+}
+.sidebar-main .sidebar-items-container .sidebar-nav-sub-items li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+.sidebar-main .sidebar-items-container .sidebar-nav-sub-items li a img {
+  margin-right: 0.5rem;
+}
+.sidebar-main .sidebar-items-container .sidebar-nav-items:hover .sidebar-nav-sub-items {
+  display: block;
+}
+.sidebar-main .sidebar-items-container .sidebar-nav-items {
+  margin: 1rem 0;
+}
+.sidebar-main .sidebar-action-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-main .sidebar-action-buttons-container button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  color: hsl(0deg, 0%, 41%);
+  font-size: 16px;
+  font-family: "Epilogue", sans-serif;
+  padding: 0.6rem 0.7rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar-main .sidebar-action-buttons-container button:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.sidebar-main .sidebar-action-buttons-container .sidebar-register-button {
+  border: 2px solid hsl(0deg, 0%, 41%);
+}
+.sidebar-main .sidebar-action-buttons-container .sidebar-register-button:hover {
+  border: 2px solid hsl(0deg, 0%, 8%);
+}/*# sourceMappingURL=Sidebar.css.map */

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+.home-main {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(0deg, 0%, 98%);
+  font-family: "Epilogue", sans-serif;
+  position: relative;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-right-container {
+  width: 100%;
+}
+.home-right-container img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home-left-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.home-left-container h1 {
+  margin: 1.5rem auto;
+}
+.home-left-container p {
+  font-size: 18px;
+  opacity: 0.7;
+  line-height: 1.5rem;
+}
+.home-left-container button {
+  border: none;
+  outline: none;
+  background-color: hsl(0deg, 0%, 8%);
+  color: white;
+  padding: 1rem;
+  font-family: "Epilogue", sans-serif;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  cursor: pointer;
+  border: 2px solid hsl(0deg, 0%, 8%);
+}
+.home-left-container button:hover {
+  color: black;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.326);
+}
+.home-left-container .home-left-container-social-media {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.home-left-container .home-left-container-social-media a {
+  transform: scale(0.7);
+}
+
+@media (min-width: 650px) {
+  .home-container {
+    width: 90%;
+    margin: 1rem auto;
+    flex-direction: row;
+    min-height: 90vh;
+  }
+  .home-container .home-right-container {
+    width: 50%;
+    padding: 0% 5%;
+  }
+  .home-container .home-left-container {
+    width: 50%;
+    padding: 0% 5%;
+    text-align: left;
+    display: block;
+  }
+  .home-container .home-left-container h1 {
+    font-size: 4rem;
+  }
+  .home-container .home-left-container .home-left-container-social-media a {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=Home.css.map */

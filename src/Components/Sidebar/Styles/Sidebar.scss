@@ -1,0 +1,123 @@
+$font-family1: 'Epilogue', sans-serif;
+$Almost-White: hsl(0, 0%, 98%);
+$Medium-Gray: hsl(0, 0%, 41%);
+$Almost-Black: hsl(0, 0%, 8%);
+
+.sidebar-main {
+    width: 70%;
+    max-width: 350px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    opacity: 1000;
+    background-color: white;
+
+
+
+
+    .sidebar-close {
+        border: none;
+        outline: none;
+        background: none;
+        margin: 0 1rem;
+        cursor: pointer;
+
+
+        padding: .6rem .7rem;
+        border-radius: 10px;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+
+
+    // 
+
+
+
+
+    .sidebar-items-container {
+        margin: 5rem 2rem;
+
+
+        .sidebar-nav-item-list-wrap,
+        .sidebar-nav-items {
+
+            a,
+            label {
+                color: $Medium-Gray;
+                font-family: $font-family1;
+            }
+
+            a:hover,
+            label:hover {
+                color: $Almost-Black;
+            }
+        }
+
+        .sidebar-nav-sub-items {
+            display: none;
+            margin: 1rem 0 .5rem 1rem;
+
+            li a {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 1rem 0;
+
+                img {
+                    margin-right: .5rem;
+                }
+            }
+        }
+
+        .sidebar-nav-items:hover .sidebar-nav-sub-items {
+            display: block;
+        }
+
+        .sidebar-nav-items {
+            margin: 1rem 0;
+        }
+    }
+
+    .sidebar-action-buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: none;
+            margin: .5rem 1rem;
+            cursor: pointer;
+            color: $Medium-Gray;
+            font-size: 16px;
+            font-family: $font-family1;
+
+            padding: .6rem .7rem;
+            border-radius: 10px;
+
+            transition: all .2s ease-in-out;
+        }
+
+        button:hover {
+            color: $Almost-Black;
+        }
+
+        .sidebar-register-button {
+            border: 2px solid $Medium-Gray;
+        }
+
+        .sidebar-register-button:hover {
+            border: 2px solid $Almost-Black;
+        }
+    }
+
+}
